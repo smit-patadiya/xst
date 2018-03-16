@@ -1,0 +1,268 @@
+/*
+ Theme Name:   XStore Child
+ Theme URI:    http://8theme.com/
+ Description:  XStore Child Theme
+ Author:       8theme
+ Author URI:   http://8theme.com
+ Template:     xstore
+ Version:      0.0.1
+ Text Domain:  xstore-child
+*/
+
+
+/*Product page*/
+.product-information table.variations{
+  width: 100%;
+}
+.single-product .product-information table.variations td.value select{
+  float: left;
+  width: 100%;
+}
+.single-product .delivery_date_label{
+  display: block;
+}
+.single-product #delivery_calender_lite{
+  min-width: 90%;
+  min-width: calc(100% - 45px);
+  float: left;
+}
+.single-product #delivery_cal_lite{
+  height: 34px;
+  width: auto;
+  margin-left: 10px;
+}
+.single-product #ui-datepicker-div .ui-widget-header{
+  background: #313131;
+  color: #fff;
+}
+.ui-datepicker-prev span:before {
+    content: "\f104";
+    font-family: FontAwesome;
+    position: relative;
+}
+#ui-datepicker-div .ui-datepicker-prev.ui-icon, .ui-datepicker .ui-datepicker-prev span,
+#ui-datepicker-div .ui-datepicker-next.ui-icon, .ui-datepicker .ui-datepicker-next span{
+    background-image: url('/wp-content/plugins/product-delivery-date-for-woocommerce-lite/images/next-prev.png') !important;
+    background-size: 32px 16px;
+}
+#ui-datepicker-div .ui-datepicker-prev.ui-icon, .ui-datepicker .ui-datepicker-prev span{
+  background-position: 0px 0px;
+}
+#ui-datepicker-div .ui-datepicker-next.ui-icon, .ui-datepicker .ui-datepicker-next span{
+  background-position: -16px 0px;
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-prev-hover,
+#ui-datepicker-div.ui-datepicker .ui-datepicker-next-hover{
+  top: 2px !important;
+  background: none !important;
+  border: 0px !important;
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-prev-hover
+{
+  left: 2px;
+}
+#ui-datepicker-div.ui-datepicker .ui-datepicker-next-hover{
+  right: 2px;
+}
+#ui-datepicker-div.ui-widget-content .ui-state-default{
+  background: #ededed;
+  border: 1px solid #ededed;
+}
+#ui-datepicker-div.ui-widget-content .ui-state-active,
+#ui-datepicker-div.ui-widget-content .ui-state-highlight.ui-state-active{
+  background: #313131;
+  color: #fff;
+}
+#ui-datepicker-div.ui-widget-content .ui-state-highlight{
+  background: #fffdcc;
+  border: 1px solid #fcefa1;
+}
+
+.single-product #pincode_field_idp{
+
+}
+.single-product form.cart #my_custom_checkout_field #pincode_field_idp label{
+  display: block;
+  margin: 2px 0;
+}
+.single-product #my_custom_checkout_field #pincode_field_idp #pincode_field_id.input-text,
+.single-product #my_custom_checkout_field2 #pincode_field_idp #pincode_field_id.input-text{
+  min-width: 200px;
+  margin: 2px auto;
+}
+.single-product #my_custom_checkout_field #pincode_field_idp .button,
+.single-product #my_custom_checkout_field2 #pincode_field_idp .button{
+  display: block;
+  margin: 2px auto !important;
+  width: 200px !important;
+  height: auto !important;
+  background: #262626 !important;
+  line-height: 1.4 !important;
+}
+.single-product #change_pin.button{
+  height: auto;
+  background: #262626 !important;
+  line-height: 1.4;
+}
+.single-product #reviews #review_form_wrapper{
+  border-right: 2px solid #e6e6e6;
+  padding-right: 20px;
+}
+#yith-wacp-popup .yith-wacp-content a.button{
+  height: auto !important;
+  line-height: 2.6 !important;
+}
+
+/*footer*/
+.mc4wp-form input{
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px;
+}
+/*cart page*/
+.woocommerce-billing-fields__field-wrapper{
+    overflow: hidden;
+}
+.woocommerce-shipping-fields .checkbox{
+  display: block;
+  padding-left: 20px;
+}
+.checkout input[type="checkbox"]{
+  margin-left: -20px;
+}
+#shipping_Wanna_give_surprise_field{
+  width: 100%;
+}
+@media screen and (max-width: 480px){
+  .woocommerce-billing-fields__field-wrapper .form-row,
+  .woocommerce-shipping-fields__field-wrapper .input-text,
+  .woocommerce-shipping-fields__field-wrapper .form-row{
+    overflow: hidden;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.header-simple .menu-wrapper .menu > li > a{
+  padding: 1em .77em;
+}
+.header-color-white .menu-wrapper .menu > li > a:hover:after,
+.header-color-white .menu-wrapper .menu > li.current-menu-item > a:after{
+  background-color: #fff !important;
+}
+.topbar-widget p{
+  color: #fff !important;
+}
+.top-bar.topbar-color-dark{
+  border: 0;
+  background: #ff4a57;
+  margin-bottom: 10px;
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received{
+  color: green;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.woocommerce-MyAccount-content{
+      overflow: scroll;
+}
+
+.padding-0 .vc_column-inner{
+	padding: 0px !important;
+}
+
+.vc_row.vc_row-o-content-top.padding-0>.vc_column_container>.vc_column-inner{
+  padding: 0;
+}
+.products-loop .et-wishlist-holder, .productCarousel .et-wishlist-holder{
+  display: none;
+}
+
+
+
+#yith-wacp-popup .yith-wacp-content{
+	overflow: scroll;
+}
+
+#yith-wacp-popup .yith-wacp-content::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#yith-wacp-popup .yith-wacp-content::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+#yith-wacp-popup .yith-wacp-content::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+#yith-wacp-popup .yith-wacp-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+#yith-wacp-popup .yith-wacp-content::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
+}
+
+#yith-wacp-popup .ps-container > .ps-scrollbar-y-rail{
+  display:none !important;
+}
+
+.home .categories-mask .count{
+	display: none;
+}
+.product-type-variable .yith-wcwl-add-to-wishlist{
+	display: none !important;
+}
+.product-information .cart + .yith-wcwl-add-to-wishlist{
+	display: none !important;
+}
